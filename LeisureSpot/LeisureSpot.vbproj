@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E70BDFF7-8F06-419C-9048-3984F65229AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LeisureSpot.My.MyApplication</StartupObject>
+    <RootNamespace>LeisureSpot</RootNamespace>
+    <AssemblyName>LeisureSpot</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\marz\Desktop\LeisureSpots\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LeisureSpot.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LeisureSpot.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7B848F6A58703108F15DF881174FD9C190EEA3A2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LeisureSpot_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbHelper.vb" />
+    <Compile Include="leisureDbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>leisureDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginInfo.vb" />
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Response.vb" />
+    <Compile Include="UCAddService.Designer.vb">
+      <DependentUpon>UCAddService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCAddService.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAddSpot.Designer.vb">
+      <DependentUpon>UCAddSpot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCAddSpot.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAdminPanel.Designer.vb">
+      <DependentUpon>UCAdminPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCAdminPanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEdit.Designer.vb">
+      <DependentUpon>UCEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCEdit.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCListSpots.Designer.vb">
+      <DependentUpon>UCListSpots.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCListSpots.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCLoginRegister.Designer.vb">
+      <DependentUpon>UCLoginRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCLoginRegister.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCScreenContainer.Designer.vb">
+      <DependentUpon>UCScreenContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCScreenContainer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSpotDetails.Designer.vb">
+      <DependentUpon>UCSpotDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCSpotDetails.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSpotItem.Designer.vb">
+      <DependentUpon>UCSpotItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCSpotItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAddService.resx">
+      <DependentUpon>UCAddService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAddSpot.resx">
+      <DependentUpon>UCAddSpot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAdminPanel.resx">
+      <DependentUpon>UCAdminPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEdit.resx">
+      <DependentUpon>UCEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCListSpots.resx">
+      <DependentUpon>UCListSpots.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCLoginRegister.resx">
+      <DependentUpon>UCLoginRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCScreenContainer.resx">
+      <DependentUpon>UCScreenContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSpotDetails.resx">
+      <DependentUpon>UCSpotDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSpotItem.resx">
+      <DependentUpon>UCSpotItem.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="leisureDbDataSet.xsc">
+      <DependentUpon>leisureDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="leisureDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>leisureDbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="leisureDbDataSet.xss">
+      <DependentUpon>leisureDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LeisureSpot_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="leisureDb.mdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

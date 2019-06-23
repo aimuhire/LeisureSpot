@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LeisureSpot", "LeisureSpot\LeisureSpot.vbproj", "{E70BDFF7-8F06-419C-9048-3984F65229AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E70BDFF7-8F06-419C-9048-3984F65229AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70BDFF7-8F06-419C-9048-3984F65229AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70BDFF7-8F06-419C-9048-3984F65229AA}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{E70BDFF7-8F06-419C-9048-3984F65229AA}.Debug|Default.Build.0 = Debug|Any CPU
+		{E70BDFF7-8F06-419C-9048-3984F65229AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E70BDFF7-8F06-419C-9048-3984F65229AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E70BDFF7-8F06-419C-9048-3984F65229AA}.Release|Default.ActiveCfg = Release|Any CPU
+		{E70BDFF7-8F06-419C-9048-3984F65229AA}.Release|Default.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0016FEE-67C6-4471-8D50-EECA209E7E22}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+EndGlobal
